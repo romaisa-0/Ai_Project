@@ -1,0 +1,286 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+header h1 {
+    color: #2d3e50;
+    font-size: 3.2em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+header h2 {
+    color: #0066cc;
+    font-size: 1.6em;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 35px;
+}
+h3 {
+    color: #0066cc;
+    font-weight: 600;
+    font-size: 1.8em;
+    margin-top: 30px;
+    text-align: center;
+}
+.team ul {
+    padding-left: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 1.2em;
+    color: #444;
+}
+.team ul li {
+    padding: 12px;
+    font-weight: 600;
+}
+.intro p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+    padding-bottom: 25px;
+}
+.btn-custom {
+    background-color: #0066cc;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 14px 30px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+.btn-custom:hover {
+    background-color: #004a99;
+    color: white;
+}
+.form-group input[type="file"] {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #f9f9f9;
+    margin-top: 15px;
+    font-size: 1em;
+}
+.form-group input[type="file"]:focus {
+    border-color: #0066cc;
+    background-color: #fff;
+}
+.prediction{
+    display: block;
+}
+.prediction-result {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #0066cc;
+    margin-top: 20px;
+    text-align: center;
+}
+.footer {
+    text-align: center;
+    font-size: 0.95em;
+    margin-top: 40px;
+    color: #777;
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+}
+.barchart{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    height: 400px;
+    width: 100%;
+    display: none;
+}
+.bars{
+    width: 100%;
+    display: flex;
+    gap: 9px;
+    position: absolute;
+    bottom: 0;
+    height: 300px;
+}
+.bar{
+    position: relative;
+    background-color: gray;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+    margin-left: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: height 0.5s ease-in-out;
+    height: 0;
+    position: relative;
+
+}
+.bar1::before{
+    content: "0";
+    position: absolute;
+    top: -40px;
+    font-size: 22px;
+    left: 0;
+    width: 100%;
+}
+.bar2::before{
+    content: "1";
+    position: absolute;
+    top: -40px;
+    font-size: 22px;
+    left: 0;
+    width: 100%;
+}
+.bar3::before{
+    content: "2";
+    position: absolute;
+    top: -40px;
+    font-size: 22px;
+    left: 0;
+    width: 100%;
+}
+.bar4::before{
+    content: "3";
+    position: absolute;
+    top: -40px;
+    font-size: 22px;
+    left: 0;
+    width: 100%;
+}
+.bar5::before{
+    content: "4";
+    position: absolute;
+    top: -40px;
+    font-size: 22px;
+    left: 0;
+    width: 100%;
+}
+.bar6::before{
+    content: "5";
+    position: absolute;
+    top: -40px;
+    font-size: 22px;
+    left: 0;
+    width: 100%;
+}
+.bar7::before{
+    content: "6";
+    position: absolute;
+    top: -40px;
+    font-size: 22px;
+    left: 0;
+    width: 100%;
+}
+.bar8::before{
+    content: "7";
+    position: absolute;
+    top: -40px;
+    font-size: 22px;
+    left: 0;
+    width: 100%;
+}
+.bar9::before{
+    content: "8";
+    position: absolute;
+    top: -40px;
+    font-size: 22px;
+    left: 0;
+    width: 100%;
+}
+.bar10::before{
+    content: "9";
+    position: absolute;
+    top: -40px;
+    font-size: 22px;
+    left: 0;
+    width: 100%;
+}
+.prediction_area{
+    width: 820px;
+    height: 416px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    display: none;
+}
+form{
+    display: none;
+}
+.drawingbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.button-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 19px;
+}
+
+.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 145px;
+    background-color: #0066cc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 56.6px;
+
+}
+
+/* .btns{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+} */
+
+.predicted_prob{
+    margin: 14px 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #0066cc;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+    header h2 {
+        font-size: 1.4em;
+    }
+    h3 {
+        font-size: 1.6em;
+    }
+    .btn-custom {
+        font-size: 1em;
+    }
+}
